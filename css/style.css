@@ -521,7 +521,7 @@ a {
   margin-bottom: 24px;
 }
 
-.modal_mobile_check visually-hidden {
+.modal_mobile_check .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;

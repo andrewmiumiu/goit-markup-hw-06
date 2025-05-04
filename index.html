@@ -57,23 +57,176 @@
       </div>
       <div class="mobile_menu">
         <div class="container mobile_menu_container">
-          <button class="mobile_menu_close"></button>
-          <nav></nav>
-          <address></address>
-          <ul>
-            <li></li>
-          </ul>
+          <button type="button" class="mobile_menu_close">
+            <svg class="close-icon" width="8" height="8">
+              <use href="./images/close-element.svg#icon-close-element"></use>
+            </svg>
+          </button>
+          <nav class="mobile_navigation">
+            <ul class="mobile_nav_list">
+              <li>
+                <a href="/" class="current_mobile_option">Studio</a>
+              </li>
+              <li>
+                <a href="/" class="mobile_option">Portfolio</a>
+              </li>
+              <li>
+                <a href="/" class="mobile_option">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile_address">
+            <ul class="mobile_contact_list">
+              <li>
+                <a href="tel:+110001111111" class="mobile_tel">
+                  +11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="mobile_mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="mobile_social">
+            <ul class="mobile_social_list">
+              <li class="mobile_social_item">
+                <a href="/" class="mobile_socicon">
+                  <svg class="mobile_soc_icon" width="24" height="24">
+                    <use href="./images/socialmedia.svg#icon-instagram1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile_social_item">
+                <a href="/" class="mobile_socicon">
+                  <svg class="mobile_soc_icon" width="24" height="24">
+                    <use href="./images/socialmedia.svg#icon-twitter1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile_social_item">
+                <a href="/" class="mobile_socicon">
+                  <svg class="mobile_soc_icon" width="24" height="24">
+                    <use href="./images/socialmedia.svg#icon-facebook1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile_social_item">
+                <a href="/" class="mobile_socicon">
+                  <svg class="mobile_soc_icon" width="24" height="24">
+                    <use href="./images/socialmedia.svg#icon-linkedin1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal_mobile_overlay">
+        <div class="mobile_modal">
+          <button type="button" class="close_btn_mobile">
+            <svg class="close_icon" width="8" height="8">
+              <use href="./images/close-element.svg#icon-close-element"></use>
+            </svg>
+          </button>
+          <p class="modal_mobile_text">
+            Leave your contacts and we will call you back
+          </p>
+          <form class="modal_mobile_form">
+            <div class="modal_mobile_field">
+              <label for="username" class="modal_mobile_label"> Name </label>
+              <div class="modal_mobile_input_wrap">
+                <input
+                  type="text"
+                  class="modal_mobile_input"
+                  name="username"
+                  required
+                  id="username"
+                />
+                <svg class="modal_mobile_icon" width="13" height="13">
+                  <use href="./images/modal-icons.svg#icon-user-icon"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="modal_mobile_field">
+              <label for="user-tel" class="modal_mobile_label">Phone</label>
+              <div class="modal_mobile_input_wrap">
+                <input
+                  type="tel"
+                  class="modal_mobile_input"
+                  name="user-tel"
+                  required
+                  id="user-tel"
+                />
+                <svg class="modal_mobile_icon" width="13" height="13">
+                  <use href="./images/modal-icons.svg#icon-tel-icon"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="modal_mobile_field">
+              <label for="user-email" class="modal_mobile_label">Email</label>
+              <div class="modal_mobile_input_wrap">
+                <input
+                  type="email"
+                  class="modal_mobile_input"
+                  name="user-email"
+                  required
+                  id="user-email"
+                /><svg class="modal_mobile_icon" width="13" height="13">
+                  <use href="./images/modal-icons.svg#icon-gmail-icon"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="modal_field_checkbox">
+              <label for="user-comment" class="modal_mobile_label">
+                Comment
+              </label>
+              <textarea
+                class="modal_mobile_textarea"
+                name="user-comment"
+                id="user-comment"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+            <div class="checkbox_field">
+              <input
+                type="checkbox"
+                class="modal_mobile_check visually-hidden"
+                name="user-privacy"
+                id="user-privacy"
+                value="true"
+              /><label for="user-privacy" class="modal_mobile_check_text"
+                ><span class="modal_mobile_span"
+                  ><svg
+                    class="modal_mobile_checkbox_icon"
+                    width="10"
+                    height="8"
+                  >
+                    <use href="./images/modal-icons.svg#icon-Vector-6-1"></use>
+                  </svg>
+                </span>
+                I accept the terms and conditions of the<a
+                  href="/"
+                  class="privacy_link"
+                >
+                  Privacy Policy</a
+                ></label
+              >
+            </div>
+            <button type="submit" class="modal_mobile_submit_btn">Send</button>
+          </form>
         </div>
       </div>
     </header>
     <main>
-      <section class="first-section hidden">
+      <section class="first-section">
         <div class="container">
           <h1 class="site-title">Effective Solutions for Your Business</h1>
           <button type="button" class="btn">Order Service</button>
         </div>
       </section>
-      <section class="main-page hidden">
+      <section class="main-page">
         <div class="container">
           <h2 class="visually-hidden">Our Values</h2>
           <ul class="values-list">
@@ -83,11 +236,13 @@
                   <use href="./images/icons.svg#icon-antenna1"></use>
                 </svg>
               </div>
-              <h3 class="main-text">Strategy</h3>
-              <p class="prgph">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
-              </p>
+              <div class="strategy_text">
+                <h3 class="main-text">Strategy</h3>
+                <p class="prgph">
+                  Our goal is to identify the business problem to walk away with
+                  the perfect and creative solution.
+                </p>
+              </div>
             </li>
             <li class="values">
               <div class="svg">
@@ -128,16 +283,12 @@
           </ul>
         </div>
       </section>
-      <section class="section-about hidden">
+      <section class="section-about">
         <div class="container">
           <h2 class="abt-us">Our Team</h2>
           <ul class="team-list">
             <li class="item">
-              <img
-                src="./images/mark-guerrero.jpg"
-                alt="Mark Guerrero"
-                width="264"
-              />
+              <img src="./images/mark-guerrero.jpg" alt="Mark Guerrero" />
               <div class="team-members">
                 <h3 class="names">Mark Guerrero</h3>
                 <p class="roles">Product Designer</p>
@@ -187,7 +338,7 @@
               </div>
             </li>
             <li class="item">
-              <img src="./images/tom-ford.jpg" alt="Tom Ford" width="264" />
+              <img src="./images/tom-ford.jpg" alt="Tom Ford" />
               <div class="team-members">
                 <h3 class="names">Tom Ford</h3>
                 <p class="roles">Frontend Developer</p>
@@ -237,11 +388,7 @@
               </div>
             </li>
             <li class="item">
-              <img
-                src="./images/camila-garcia.jpg"
-                alt="Camila Garcia"
-                width="264"
-              />
+              <img src="./images/camila-garcia.jpg" alt="Camila Garcia" />
               <div class="team-members">
                 <h3 class="names">Camila Garcia</h3>
                 <p class="roles">Marketing</p>
@@ -291,11 +438,7 @@
               </div>
             </li>
             <li class="item">
-              <img
-                src="./images/daniel-wilson.jpg"
-                alt="Daniel Wilson"
-                width="264"
-              />
+              <img src="./images/daniel-wilson.jpg" alt="Daniel Wilson" />
               <div class="team-members">
                 <h3 class="names">Daniel Wilson</h3>
                 <p class="roles">UI Designer</p>
@@ -347,17 +490,13 @@
           </ul>
         </div>
       </section>
-      <section class="section-portfolio hidden">
+      <section class="section-portfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="item-projects">
               <div class="portfolio-thumb">
-                <img
-                  src="./images/bank-app.jpg"
-                  alt="Banking App"
-                  width="360"
-                />
+                <img src="./images/bank-app.jpg" alt="Banking App" />
                 <p class="portfolio-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -371,11 +510,7 @@
             </li>
             <li class="item-projects">
               <div class="portfolio-thumb">
-                <img
-                  src="./images/cash-less.jpg"
-                  alt="CashlessPayment"
-                  width="360"
-                />
+                <img src="./images/cash-less.jpg" alt="CashlessPayment" />
                 <p class="portfolio-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -390,11 +525,7 @@
             </li>
             <li class="item-projects">
               <div class="portfolio-thumb">
-                <img
-                  src="./images/med-app.jpg"
-                  alt="Meditation App"
-                  width="360"
-                />
+                <img src="./images/med-app.jpg" alt="Meditation App" />
                 <p class="portfolio-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -408,11 +539,7 @@
             </li>
             <li class="item-projects">
               <div class="portfolio-thumb">
-                <img
-                  src="./images/taxi-ser.jpg"
-                  alt="Taxi Service"
-                  width="360"
-                />
+                <img src="./images/taxi-ser.jpg" alt="Taxi Service" />
                 <p class="portfolio-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -426,11 +553,7 @@
             </li>
             <li class="item-projects">
               <div class="portfolio-thumb">
-                <img
-                  src="./images/screen-il.jpg"
-                  alt="Screen Illustration"
-                  width="360"
-                />
+                <img src="./images/screen-il.jpg" alt="Screen Illustration" />
                 <p class="portfolio-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -444,11 +567,7 @@
             </li>
             <li class="item-projects">
               <div class="portfolio-thumb">
-                <img
-                  src="./images/onl-crs.jpg"
-                  alt="Online Courses"
-                  width="360"
-                />
+                <img src="./images/onl-crs.jpg" alt="Online Courses" />
                 <p class="portfolio-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -464,7 +583,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer hidden">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo-wrap">
           <a href="./index.html" class="logo">
@@ -624,6 +743,97 @@
           </div>
 
           <button type="submit" class="submit-btn">Send</button>
+        </form>
+      </div>
+    </div>
+    <div class="modal_mobile_overlay">
+      <div class="mobile_modal">
+        <button type="button" class="close_btn_mobile">
+          <svg class="close_icon" width="8" height="8">
+            <use href="./images/close-element.svg#icon-close-element"></use>
+          </svg>
+        </button>
+        <p class="modal_mobile_text">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="modal_mobile_form">
+          <div class="modal_mobile_field">
+            <label for="username" class="modal_mobile_label"> Name </label>
+            <div class="modal_mobile_input_wrap">
+              <input
+                type="text"
+                class="modal_mobile_input"
+                name="username"
+                required
+                id="username"
+              />
+              <svg class="modal_mobile_icon" width="13" height="13">
+                <use href="./images/modal-icons.svg#icon-user-icon"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal_mobile_field">
+            <label for="user-tel" class="modal_mobile_label">Phone</label>
+            <div class="modal_mobile_input_wrap">
+              <input
+                type="tel"
+                class="modal_mobile_input"
+                name="user-tel"
+                required
+                id="user-tel"
+              />
+              <svg class="modal_mobile_icon" width="13" height="13">
+                <use href="./images/modal-icons.svg#icon-tel-icon"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal_mobile_field">
+            <label for="user-email" class="modal_mobile_label">Email</label>
+            <div class="modal_mobile_input_wrap">
+              <input
+                type="email"
+                class="modal_mobile_input"
+                name="user-email"
+                required
+                id="user-email"
+              /><svg class="modal_mobile_icon" width="13" height="13">
+                <use href="./images/modal-icons.svg#icon-gmail-icon"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal_field_checkbox">
+            <label for="user-comment" class="modal_mobile_label">
+              Comment
+            </label>
+            <textarea
+              class="modal_mobile_textarea"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="checkbox_field">
+            <input
+              type="checkbox"
+              class="modal_mobile_check visually-hidden"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+            /><label for="user-privacy" class="modal_mobile_check_text"
+              ><span class="modal_mobile_span"
+                ><svg class="modal_mobile_checkbox_icon" width="10" height="8">
+                  <use href="./images/modal-icons.svg#icon-Vector-6-1"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the<a
+                href="/"
+                class="privacy_link"
+              >
+                Privacy Policy</a
+              ></label
+            >
+          </div>
+          <button type="submit" class="modal_mobile_submit_btn">Send</button>
         </form>
       </div>
     </div>

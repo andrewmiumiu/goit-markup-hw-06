@@ -319,6 +319,7 @@ a {
 
 .mobile_tel {
   font-family: "Roboto", sans-serif;
+  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -328,6 +329,7 @@ a {
 
 .mobile_mail {
   font-family: "Roboto", sans-serif;
+  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -1069,7 +1071,6 @@ a {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  min-height: 160px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1139,6 +1140,7 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  margin-bottom: 72px;
 }
 
 .footer-prgph {
@@ -1148,7 +1150,6 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  margin-bottom: 72px;
 }
 
 .footer-social-wrap {
@@ -1156,6 +1157,7 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  margin-bottom: 72px;
 }
 
 .footer-social-text {
@@ -1171,7 +1173,6 @@ a {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-bottom: 72px;
 }
 
 .footer-contacts-wrap {
